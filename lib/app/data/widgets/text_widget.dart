@@ -8,17 +8,20 @@ class TextWidget extends StatelessWidget {
     required this.size,
     required this.weight,
     required this.color,
+    this.align,
   });
 
   final String title;
   final double size;
   final FontWeight weight;
   final Color color;
+  final TextAlign? align;
 
   @override
   Widget build(BuildContext context) {
     return Text(
       title,
+      textAlign: align,
       style: GoogleFonts.poppins(
         fontSize: size,
         fontWeight: weight,

@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:myapp/app/modules/onboard/bindings/onboard_binding.dart';
+import 'package:myapp/app/modules/onboard/views/onboard_view.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.home,
       page: () => const HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.onboard,
+      page: () => const OnboardView(),
+      binding: OnboardBinding(),
     ),
   ];
 }

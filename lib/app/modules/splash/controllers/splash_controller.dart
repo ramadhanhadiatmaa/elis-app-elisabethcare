@@ -17,9 +17,9 @@ class SplashController extends GetxController {
     if (box.read("dataCache") != null && box.read("datalogin") != null) {
       Get.offNamed(Routes.home);
     } else if (box.read("dataCache") != null && box.read("datalogin") == null) {
-      Get.offNamed(Routes.login);
+      Get.offNamed(Routes.onboard);
     } else {
-      Get.offNamed(Routes.login);
+      Get.offNamed(Routes.onboard);
     }
   }
 }

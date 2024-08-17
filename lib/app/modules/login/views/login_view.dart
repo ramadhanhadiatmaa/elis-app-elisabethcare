@@ -73,6 +73,7 @@ class LoginView extends GetView<LoginController> {
                   autocorrect: false,
                   keyboardType: TextInputType.name,
                   decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.only(left: 20, right: 20),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -91,6 +92,7 @@ class LoginView extends GetView<LoginController> {
                   keyboardType: TextInputType.text,
                   obscureText: true,
                   decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.only(left: 20, right: 20),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
