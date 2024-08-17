@@ -8,10 +8,13 @@ import '../../../data/widgets/text_widget.dart';
 import '../controllers/splash_controller.dart';
 
 class SplashView extends GetView<SplashController> {
-  const SplashView({Key? key}) : super(key: key);
+  SplashView({Key? key}) : super(key: key);
+
+  final splashC = Get.put(SplashController());
 
   @override
   Widget build(BuildContext context) {
+    splashC.SplashScreen();
     return Scaffold(
       body: Stack(
         children: [
