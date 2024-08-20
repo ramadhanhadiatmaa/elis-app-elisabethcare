@@ -5,6 +5,7 @@ import 'package:myapp/app/data/constants/file_string.dart';
 import 'package:myapp/app/data/widgets/button_widget.dart';
 import 'package:myapp/app/data/widgets/text_widget.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
@@ -111,7 +112,7 @@ class LoginView extends GetView<LoginController> {
                 bColor: cBlue,
                 size: 12,
                 rad: 30,
-                press: () {},
+                press: () => Get.offAllNamed(Routes.home),
                 width: MediaQuery.of(context).size.width,
                 height: 30,
               ),
@@ -128,7 +129,8 @@ class LoginView extends GetView<LoginController> {
                 bColor: cGreen,
                 size: 12,
                 rad: 30,
-                press: () {},
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:93746554.
+                press: () => Get.offAllNamed(Routes.home),
                 width: MediaQuery.of(context).size.width,
                 height: 30,
               ),
