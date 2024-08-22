@@ -23,7 +23,7 @@ class IntroSection extends StatelessWidget {
           IconButton(
             onPressed: () => Get.toNamed(Routes.profil),
             icon: const Icon(
-              Icons.account_circle_outlined,
+              Icons.account_circle,
               color: cBlue,
             ),
           ),
@@ -32,6 +32,14 @@ class IntroSection extends StatelessWidget {
             size: 14,
             weight: FontWeight.w700,
             color: cBlack,
+          ),
+          const Spacer(),
+          IconButton(
+            onPressed: () => Get.toNamed(Routes.chat),
+            icon: const Icon(
+              Icons.chat_bubble_outline_outlined,
+              color: cBlue,
+            ),
           ),
         ],
       ),

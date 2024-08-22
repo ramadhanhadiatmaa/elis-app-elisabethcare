@@ -7,6 +7,7 @@ abstract class Routes {
   static const home = _Paths.home;
   static const onboard = _Paths.onboard;
   static const profil = _Paths.profil;
+  static const chat = _Paths.chat;
 }
 
 abstract class _Paths {
@@ -16,4 +17,5 @@ abstract class _Paths {
   static const home = '/home';
   static const onboard = '/onboard';
   static const profil = '/profil';
+  static const chat = '/chat';
 }

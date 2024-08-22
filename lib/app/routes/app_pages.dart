@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:myapp/app/modules/chat/bindings/chat_binding.dart';
+import 'package:myapp/app/modules/chat/views/chat_view.dart';
 import 'package:myapp/app/modules/onboard/bindings/onboard_binding.dart';
 import 'package:myapp/app/modules/onboard/views/onboard_view.dart';
 import 'package:myapp/app/modules/profil/bindings/profil_binding.dart';
@@ -43,6 +45,11 @@ class AppPages {
       name: _Paths.profil,
       page: () => const ProfilView(),
       binding: ProfilBinding(),
+    ),
+    GetPage(
+      name: _Paths.chat,
+      page: () => const ChatView(),
+      binding: ChatBinding(),
     ),
   ];
 }
