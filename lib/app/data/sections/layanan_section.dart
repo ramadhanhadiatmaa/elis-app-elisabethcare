@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/app/data/widgets/layanan_widget.dart';
 
 import '../constants/color.dart';
+import '../constants/file_string.dart';
 import '../widgets/text_widget.dart';
 
 class LayananSection extends StatelessWidget {
@@ -10,8 +12,8 @@ class LayananSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
+    return const Padding(
+      padding: EdgeInsets.only(
         top: 10,
         left: 20,
         right: 20,
@@ -19,48 +21,47 @@ class LayananSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const TextWidget(
+          TextWidget(
             title: "Layanan Kami",
             size: 12,
             weight: FontWeight.w800,
             color: cBlue,
           ),
-          const SizedBox(
-            height: 5,
+          SizedBox(
+            height: 10,
           ),
-          Container(
-            width: 80,
-            height: 80,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: cWhite,
-                boxShadow: [
-                  BoxShadow(
-                    color: cGrey.withOpacity(0.3),
-                    spreadRadius: 3.0,
-                    blurRadius: 3.0,
-                    offset: const Offset(1, 1),
-                  ),
-                ]),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 40,
-                  height: 40,
-                  color: cBlue,
-                ),
-                const SizedBox(
-                  height: 5,
-                ),
-                const TextWidget(
-                  title: "Ambulance",
-                  size: 10,
-                  weight: FontWeight.w400,
-                  color: cBlack,
-                ),
-              ],
-            ),
+          Row(
+            children: [
+              LayananWidget(title: text1, image: img1),
+              LayananWidget(title: text2, image: img2),
+              LayananWidget(title: text3, image: img3),
+              LayananWidget(title: text4, image: img4),
+              LayananWidget(title: text5, image: img5),
+            ],
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              LayananWidget(title: text6, image: img6),
+              LayananWidget(title: text7, image: img7),
+              LayananWidget(title: text8, image: img8),
+              LayananWidget(title: text9, image: img9),
+              LayananWidget(title: text10, image: img10),
+            ],
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              LayananWidget(title: text11, image: img11),
+              LayananWidget(title: text12, image: img12),
+              LayananWidgetFlex(),
+              LayananWidgetFlex(),
+              LayananWidgetFlex(),
+            ],
           ),
         ],
       ),

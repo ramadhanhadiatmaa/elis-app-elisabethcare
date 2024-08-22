@@ -8,6 +8,9 @@ abstract class Routes {
   static const onboard = _Paths.onboard;
   static const profil = _Paths.profil;
   static const chat = _Paths.chat;
+  static const poli = _Paths.poli;
+  static const kamar = _Paths.kamar;
+  static const antrian = _Paths.antrian;
 }
 
 abstract class _Paths {
@@ -18,4 +21,7 @@ abstract class _Paths {
   static const onboard = '/onboard';
   static const profil = '/profil';
   static const chat = '/chat';
+  static const poli = '/poli';
+  static const kamar = '/kamar';
+  static const antrian = '/antrian';
 }
