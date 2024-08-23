@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:myapp/app/routes/app_pages.dart';
 
 import '../constants/color.dart';
 import '../widgets/button_widget.dart';
@@ -72,7 +74,7 @@ class DokterView extends StatelessWidget {
                   bColor: cBlue,
                   size: 8,
                   rad: 10,
-                  press: () {},
+                  press: () => Get.toNamed(Routes.detaildokter),
                   width: 155,
                   height: 30,
                 ),

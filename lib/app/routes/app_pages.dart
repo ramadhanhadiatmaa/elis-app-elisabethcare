@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:myapp/app/modules/chat/bindings/chat_binding.dart';
 import 'package:myapp/app/modules/chat/views/chat_view.dart';
+import 'package:myapp/app/modules/detaildokter/bindings/detaildokter_binding.dart';
+import 'package:myapp/app/modules/detaildokter/views/detaildokter_view.dart';
 import 'package:myapp/app/modules/onboard/bindings/onboard_binding.dart';
 import 'package:myapp/app/modules/onboard/views/onboard_view.dart';
 import 'package:myapp/app/modules/profil/bindings/profil_binding.dart';
@@ -34,7 +36,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.login,
-      page: () => const LoginView(),
+      page: () => LoginView(),
       binding: LoginBinding(),
     ),
     GetPage(
@@ -71,6 +73,11 @@ class AppPages {
       name: _Paths.antrian,
       page: () => const AntrianView(),
       binding: AntrianBinding(),
+    ),
+    GetPage(
+      name: _Paths.detaildokter,
+      page: () => const DetaildokterView(),
+      binding: DetaildokterBinding(),
     ),
   ];
 }

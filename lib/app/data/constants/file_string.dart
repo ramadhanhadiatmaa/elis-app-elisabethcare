@@ -28,6 +28,10 @@ const String text10 = "Operasi";
 const String text11 = "Apotek";
 const String text12 = "NICU";
 
+const String antrian = "assets/img_antrian.png";
+const String poli = "assets/img_poli.png";
+const String kamar = "assets/img_kamar.png";
+
 const String img1 = "assets/image_igd.png";
 const String img2 = "assets/image_ambulance.png";
 const String img3 = "assets/image_medis.png";
@@ -40,3 +44,9 @@ const String img9 = "assets/image_umum.png";
 const String img10 = "assets/image_operasi.png";
 const String img11 = "assets/image_apotik.png";
 const String img12 = "assets/image_nicu.png";
+
+const String syarat =
+    "Syarat & Ketentuan Penggunaan dan Pemberitahuan Privasi merupakan ketentuan yang harus dibaca, dipahami, dan disetujui oleh Pengguna sebelum mengakses atau menggunakan aplikasi ELisaCare App. Lihat selengkapnya di sini:";
+
+const String agree =
+    "Dengan menyatakan Setuju, Anda menerima segala isi Syarat & Ketentuan Penggunaan dan Pemberitahuan Privasi.";

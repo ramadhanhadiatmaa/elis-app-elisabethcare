@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myapp/app/data/constants/file_string.dart';
 import 'package:myapp/app/routes/app_pages.dart';
 
 import '../constants/color.dart';
@@ -47,14 +48,17 @@ class InformasiSection extends StatelessWidget {
                       children: [
                         InfoButWidget(
                           title: "Antrian",
+                          image: antrian,
                           press: () => Get.toNamed(Routes.antrian),
                         ),
                         InfoButWidget(
                           title: "Poli",
+                          image: poli,
                           press: () => Get.toNamed(Routes.poli),
                         ),
                         InfoButWidget(
                           title: "Kamar",
+                          image: kamar,
                           press: () => Get.toNamed(Routes.kamar),
                         ),
                       ],

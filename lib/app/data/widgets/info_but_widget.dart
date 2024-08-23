@@ -4,9 +4,14 @@ import '../constants/color.dart';
 import 'text_widget.dart';
 
 class InfoButWidget extends StatelessWidget {
-  InfoButWidget({super.key, required this.title, required this.press});
+  InfoButWidget({
+    super.key,
+    required this.title,
+    required this.press,
+    required this.image,
+  });
 
-  final String title;
+  final String title, image;
   final VoidCallback press;
 
   @override
@@ -18,20 +23,20 @@ class InfoButWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-            width: 40,
-            height: 40,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                    20,
+          InkWell(
+            onTap: press,
+            child: SizedBox(
+              width: 40,
+              height: 40,
+              child: Container(
+                width: 40,
+                height: 40,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(image),
                   ),
                 ),
-                backgroundColor: cBlue,
               ),
-              onPressed: press,
-              child: const Text(""),
             ),
           ),
           TextWidget(

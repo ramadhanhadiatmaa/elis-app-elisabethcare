@@ -85,7 +85,7 @@ class SplashView extends GetView<SplashController> {
                     title: "Rumah Sakit Santa Elisabeth Sambas",
                     size: 10,
                     weight: FontWeight.w300,
-                    color: cBlack,
+                    color: cWhite,
                   ),
                 ],
               ),

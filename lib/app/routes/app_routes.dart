@@ -11,6 +11,7 @@ abstract class Routes {
   static const poli = _Paths.poli;
   static const kamar = _Paths.kamar;
   static const antrian = _Paths.antrian;
+  static const detaildokter = _Paths.detaildokter;
 }
 
 abstract class _Paths {
@@ -24,4 +25,5 @@ abstract class _Paths {
   static const poli = '/poli';
   static const kamar = '/kamar';
   static const antrian = '/antrian';
+  static const detaildokter = '/detaildokter';
 }
